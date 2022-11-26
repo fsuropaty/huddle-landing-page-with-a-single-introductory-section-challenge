@@ -1,0 +1,156 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  height: 100vh;
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--Violet);
+  background-size: contain;
+}
+
+main {
+  margin: 0 auto;
+  padding: 1.7rem;
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+  max-width: 375px;
+}
+
+.logo {
+  width: 7.5rem;
+}
+
+.illustration {
+  margin-top: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-bottom: 0;
+}
+
+button {
+  width: fit-content;
+  place-self: center;
+  padding: 0.7rem 5rem;
+  background-color: white;
+  color: var(--Violet);
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transition: background-color 500ms, color 500ms;
+  margin-bottom: 2rem;
+  font-family: "Open Sans";
+}
+
+button:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+  cursor: pointer;
+}
+
+.social-media {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.social-media > * {
+  font-size: 24px;
+  transition: color 500ms, font-size 500ms;
+}
+
+.social-media > *:hover {
+  color: var(--Soft-Magenta);
+  font-size: 32px;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Poppins";
+  font-size: small;
+}
+
+.attribution a {
+  color: var(--Soft-Magenta);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+  }
+
+  main {
+    grid-template-columns: 1.25fr 1fr;
+    max-width: 1440px;
+    padding: 2rem 4rem;
+    margin: 2rem auto;
+  }
+
+  .logo {
+    width: 13rem;
+  }
+
+  .content {
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+
+  button {
+    padding: 0.8rem 3.8rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.5);
+  }
+
+  .social-media {
+    justify-content: end;
+  }
+
+  .social-media > * {
+    font-size: 36px;
+  }
+
+  .social-media > *:hover {
+    font-size: 40px;
+  }
+
+  .attribution {
+    margin: 0;
+    font-size: medium;
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+}
