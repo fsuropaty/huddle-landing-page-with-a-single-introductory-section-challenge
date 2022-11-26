@@ -4,7 +4,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-color: var(--Violet);
@@ -52,7 +52,7 @@ button {
   border: none;
   box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
   transition: background-color 500ms, color 500ms;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   font-family: "Open Sans";
 }
 
@@ -63,7 +63,7 @@ button:hover {
 }
 
 .social-media {
-  color: white;
+  fill: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,13 +72,13 @@ button:hover {
 }
 
 .social-media > * {
-  font-size: 24px;
-  transition: color 500ms, font-size 500ms;
+  width: 1.5rem;
+  transition: fill 500ms, width 500ms;
 }
 
 .social-media > *:hover {
-  color: var(--Soft-Magenta);
-  font-size: 32px;
+  fill: var(--Soft-Magenta);
+  width: 2rem;
 }
 
 .attribution {
@@ -94,7 +94,7 @@ button:hover {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
   body {
     background-image: url("./images/bg-desktop.svg");
   }
@@ -128,7 +128,7 @@ button:hover {
 
   button {
     padding: 0.8rem 3.8rem;
-    margin-top: 2rem;
+
     font-size: 1.2rem;
     box-shadow: 0px 10px 15px -8px rgba(0, 0, 0, 0.5);
   }
@@ -138,11 +138,11 @@ button:hover {
   }
 
   .social-media > * {
-    font-size: 36px;
+    width: 2.25rem;
   }
 
   .social-media > *:hover {
-    font-size: 40px;
+    width: 2.5rem;
   }
 
   .attribution {
