@@ -33,7 +33,7 @@ Users should be able to:
 
 <!--START_SECTION:update_image-->
 
-![](./images/mobile-screenshot.png)
+![](images/mobile-screenshot.png)
 
 <!--END_SECTION:update_image-->
 
