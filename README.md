@@ -30,7 +30,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/desktop-screenshot.png)
+
+<!--START_SECTION:update_image-->
+
 ![](./images/mobile-screenshot.png)
+
+<!--END_SECTION:update_image-->
 
 ### Links
 
